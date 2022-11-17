@@ -83,6 +83,8 @@ def Farm():
     my_login = ""
     my_password = ""
     url = ""
+
+    assert my_login != '', ValueError()
     driver = webdriver.Chrome()
 
     driver.maximize_window()
